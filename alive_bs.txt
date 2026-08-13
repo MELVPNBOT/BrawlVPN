@@ -1,7 +1,8 @@
 #profile-title: BrawlВПН БС
-#profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=73667279060992; expire=151400523600
 #announce:base64:0JvRg9GH0YjQuNC5INCy0L/QvSDQtNC70Y8g0JHRgNCw0LLQuyDQodGC0LDRgNGBLNCi0LXQu9C10LPRgNCw0LzQvNCwCtCR0LXRgdC/0LvQsNGC0L3QvgrQktCw0LbQvdC+ISDQndC10LrRgtC+0YDRi9C1INGB0LXRgNCy0LXRgNCwINC90LUg0YDQsNCx0L7RgtCw0Y7RgiDQv9GA0Lgg0LHQtdC70YvRhdGB0L/QuNGB0LrQvtCyIQo=
 #support-url:
 #profile-web-page-url:
 
+hysteria2://c4c76798-f625-4841-a9c4-9741743147bc@tn.tmn141246.ru:443?sni=live.ok.ru&amp;insecure=1#🌐 BrawlВПН БС
+hysteria2://f37691d2-a0bc-407d-b640-1802fa45d0df@tn.tmn141246.ru:443?sni=live.ok.ru&amp;insecure=1#🌐 BrawlВПН БС

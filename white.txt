@@ -1,8 +1,18 @@
 #profile-title: BrawlВПН БС
 #profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=73667279060992; expire=151400523600
-#announce:base64:0KLQs9C6OkBCcmF3bFZQTnJ1CtCf0L7QtNC/0LjRgdC60LAg0LTQu9GPINCx0LXQu9GL0YUg0YHQv9C40YHQutC+0LIhCtCf0L7QtNC/0LjRgdC60LAg0LzQvtC20LXRgiDQvdC1INGA0LDQsdC+0YLQsNGC0YwhCtCe0YLQu9C40YfQvdC+INGA0LDQsdC+0YLQsNC10YIg0YLQsyzRgtGCLNCx0YDQsNCy0LsuCtCe0LHQvdC+0LLQu9C10L3QvjoKMjIuMDguMjAyNiAxNTo0Nw==
+#announce:base64:0KLQs9C6OkBCcmF3bFZQTnJ1CtCf0L7QtNC/0LjRgdC60LAg0LTQu9GPINCx0LXQu9GL0YUg0YHQv9C40YHQutC+0LIhCtCf0L7QtNC/0LjRgdC60LAg0LzQvtC20LXRgiDQvdC1INGA0LDQsdC+0YLQsNGC0YwhCtCe0YLQu9C40YfQvdC+INGA0LDQsdC+0YLQsNC10YIg0YLQsyzRgtGCLNCx0YDQsNCy0LsuCtCe0LHQvdC+0LLQu9C10L3QvjoKMjMuMDguMjAyNiAxMTowNA==
 #support-url:https://t.me/BrawlVPNru
 #profile-web-page-url:https://t.me/BrawlVPNru
-vless://dbc43f55-79cd-4331-84ff-d891356d387a@45.195.228.253:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=66-fz0xjwauydj29EfFKyPHjJ2CIGaGSsJ6hsB--zAc&sid=de8d3223e7d85761&sni=storage.yandex.net#🇫🇮 Белый список 1
-vless://dbc43f55-79cd-4331-84ff-d891356d387a@45.195.228.100:443?security=reality&encryption=none&sni=storage.yandex.net&fp=firefox&pbk=KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg&sid=b0c58c398abb6842&flow=xtls-rprx-vision#🇫🇮 Белый список 2
+vless://66824c94-7ba9-4113-908e-bd793f296852@45.195.111.108:443?flow=xtls-rprx-vision&fp=firefox&pbk=7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg&security=reality&sid=2715592069f36fe7&sni=storage.yandex.net&encryption=none#🇭🇺 Белый список 1
+vless://851ed0d8-a37b-452d-8ef2-5b6c2d28a060@46.243.234.205:2027?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo&security=reality&sid=8d3293f0066e129a&sni=storage.yandex.net&type=raw#🇩🇪 Белый список 2
+vless://66824c94-7ba9-4113-908e-bd793f296852@45.195.228.100:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=KYlgK96xPZJq10GbhF-BaCXRxXc9XzxzfICdooYvMlg&sid=f45c9665f3261108&sni=storage.yandex.net#🇫🇮 Белый список 3
+vless://12d25dfa-5613-4b02-9917-64daba0831aa@176.109.85.112:8443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=ads.x5.ru&pbk=AiG06E-jizo9xtBbulKQvdQqhZfobZJBTQIKkaDjaiU&sid=a1b2c3d4e5&fp=chrome#🇳🇱 Белый список 4
+vless://4d6a0666-26b0-407c-8caf-714fa4a5c4c6@217.16.27.113:8443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=io.ozone.ru&pbk=AiG06E-jizo9xtBbulKQvdQqhZfobZJBTQIKkaDjaiU&sid=a1b2c3d4e5&fp=chrome#🇳🇱 Белый список 5
+vless://a8b1af8a-2bab-48a5-b0ce-c11215a6a323@217.16.27.113:8443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=5post-gate.x5.ru&pbk=AiG06E-jizo9xtBbulKQvdQqhZfobZJBTQIKkaDjaiU&sid=a1b2c3d4e5&fp=chrome#🇳🇱 Белый список 6
+vless://851ed0d8-a37b-452d-8ef2-5b6c2d28a060@185.141.227.228:2027?type=raw&security=reality&flow=xtls-rprx-vision&fp=firefox&pbk=ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo&sid=dc8109baf0f607ea&sni=storage.yandex.net#🌐 Белый список 7
+vless://82719790-ff61-4284-8668-ba140a4d6cbd@193.187.95.21:20040?encryption=none&flow=xtls-rprx-vision&pbk=O4ymaaoTi3woCs3MWktyrXKhlU5RCK1Wo0G_T0u_Vi4&security=reality&sid=5db60b1f&sni=yandex.ru&type=tcp&fp=edge#🇧🇪 Белый список 8
+vless://4d6a0666-26b0-407c-8caf-714fa4a5c4c6@176.109.85.112:8443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=max.ru&pbk=AiG06E-jizo9xtBbulKQvdQqhZfobZJBTQIKkaDjaiU&sid=a1b2c3d4e5&fp=chrome#🇳🇱 Белый список 9
+vless://a8b1af8a-2bab-48a5-b0ce-c11215a6a323@176.109.85.112:8443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=ads.x5.ru&pbk=AiG06E-jizo9xtBbulKQvdQqhZfobZJBTQIKkaDjaiU&sid=a1b2c3d4e5&fp=chrome#🇳🇱 Белый список 10
+vless://2d9684c5-2910-5105-aa0b-c34f2da7ce58@212.67.12.194:443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=sun9-39.userapi.com&pbk=Lbug_wz0y9xgKeDK44D9kuUap0fXzNKyv_nMJxnZRzU&sid=08&fp=firefox#🌐 Белый список 11
+vless://12d25dfa-5613-4b02-9917-64daba0831aa@217.16.27.113:8443?encryption=none&type=tcp&security=reality&flow=xtls-rprx-vision&sni=5post-gate.x5.ru&pbk=AiG06E-jizo9xtBbulKQvdQqhZfobZJBTQIKkaDjaiU&sid=a1b2c3d4e5&fp=chrome#🇳🇱 Белый список 12

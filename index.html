@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrawlVPN — подписка</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0B0F17;
+    --card: #121826;
+    --card-2: #171F30;
+    --line: #232C40;
+    --text: #EAEFF7;
+    --muted: #8A94A6;
+    --accent: #46C6C9;
+    --accent-dim: rgba(70,198,201,0.12);
+    --green: #33C481;
+    --green-bg: rgba(51,196,129,0.10);
+    --red: #E2596B;
+    --red-bg: rgba(226,89,107,0.10);
+    --amber: #E0A83E;
+    --amber-bg: rgba(224,168,62,0.10);
+    --radius: 16px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background-color:var(--bg);
+    background-image:
+      linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+    background-size:32px 32px;
+    background-position:center top;
+    color:var(--text);
+    font-family:'Manrope', "Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji", sans-serif;
+    padding:40px 20px 80px;
+    min-height:100vh;
+  }
+  .emoji{
+    font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Segoe UI Symbol", sans-serif;
+    font-style:normal;
+    line-height:1;
+  }
+  .page{max-width:700px;margin:0 auto;}
+
+  /* Header */
+  .top{
+    display:flex;align-items:center;justify-content:space-between;
+    margin-bottom:28px;
+  }
+  .brand{display:flex;align-items:center;gap:14px;}
+  .brand-icon{
+    width:42px;height:42px;border-radius:12px;
+    background:linear-gradient(135deg,#1B2436,#0E1420);
+    border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;
+  }
+  .brand h1{font-size:22px;margin:0;font-weight:800;}
+  .top-actions{display:flex;gap:10px;}
+  .icon-btn{
+    width:40px;height:40px;border-radius:12px;
+    border:1px solid var(--line);background:var(--card);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--muted);cursor:pointer;
+  }
+  .icon-btn:hover{color:var(--accent);border-color:var(--accent);}
+  .icon-btn.tg{background:var(--accent-dim);color:var(--accent);border-color:transparent;}
+
+  /* Subscription card */
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    margin-bottom:20px;
+    overflow:hidden;
+  }
+  .sub-head{
+    display:flex;align-items:center;gap:14px;
+    padding:20px 22px;cursor:pointer;
+  }
+  .status-dot{
+    width:26px;height:26px;border-radius:50%;
+    background:var(--green-bg);color:var(--green);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;font-size:14px;
+  }
+  .sub-head-text{flex:1;min-width:0;}
+  .sub-head-text .name{font-weight:700;font-size:16px;}
+  .sub-head-text .sub{color:var(--muted);font-size:13px;margin-top:2px;}
+  .chevron{color:var(--muted);transition:transform .2s ease;}
+  .card.collapsed .chevron{transform:rotate(180deg);}
+  .card.collapsed .sub-body{display:none;}
+
+  .sub-body{
+    padding:0 16px 16px;
+    display:grid;grid-template-columns:1fr 1fr;gap:12px;
+  }
+  @media (max-width:520px){.sub-body{grid-template-columns:1fr;}}
+  .info-box{
+    border-radius:12px;padding:16px;background:var(--card-2);
+    border:1px solid var(--line);
+  }
+  .info-box.green{background:var(--green-bg);border-color:transparent;}
+  .info-box.red{background:var(--red-bg);border-color:transparent;}
+  .info-box.amber{background:var(--amber-bg);border-color:transparent;}
+  .info-label{
+    display:flex;align-items:center;gap:8px;
+    font-size:12.5px;color:var(--muted);margin-bottom:8px;
+  }
+  .info-box.green .info-label{color:var(--green);}
+  .info-box.red .info-label{color:var(--red);}
+  .info-box.amber .info-label{color:var(--amber);}
+  .info-value{font-weight:700;font-size:15px;word-break:break-word;}
+
+  /* Install card */
+  .install-head{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:22px 22px 18px;flex-wrap:wrap;gap:14px;
+  }
+  .install-head h2{font-size:20px;margin:0;font-weight:800;}
+  .platform-select{
+    display:flex;align-items:center;gap:8px;
+    background:var(--card-2);border:1px solid var(--line);
+    border-radius:10px;padding:9px 14px;font-size:14px;color:var(--text);
+    cursor:pointer;
+  }
+  .platform-select select{
+    background:none;border:none;color:var(--text);font-family:inherit;
+    font-size:14px;cursor:pointer;outline:none;
+  }
+  .platform-select option{background:var(--card);}
+
+  .tabs{
+    display:flex;gap:10px;padding:0 22px 22px;overflow-x:auto;
+  }
+  .tab{
+    display:flex;align-items:center;gap:8px;position:relative;
+    padding:12px 18px;border-radius:12px;
+    border:1px solid var(--line);background:var(--card-2);
+    font-size:14.5px;font-weight:600;color:var(--muted);
+    white-space:nowrap;cursor:pointer;flex-shrink:0;
+  }
+  .tab.active{background:var(--accent-dim);border-color:var(--accent);color:var(--accent);}
+  .tab .dot{
+    width:7px;height:7px;border-radius:50%;background:var(--amber);
+    position:absolute;top:8px;right:8px;
+  }
+
+  .step{
+    display:flex;gap:16px;padding:20px 22px;border-top:1px solid var(--line);
+  }
+  .step-icon{
+    width:38px;height:38px;border-radius:10px;flex-shrink:0;
+    background:var(--accent-dim);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;font-size:17px;
+  }
+  .step-icon.done{background:var(--green-bg);color:var(--green);}
+  .step-body h3{font-size:16px;margin:0 0 6px;font-weight:700;}
+  .step-body p{color:var(--muted);font-size:14px;margin:0 0 14px;line-height:1.5;}
+  .step-actions{display:flex;gap:10px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:10px 16px;border-radius:10px;
+    background:var(--accent-dim);color:var(--accent);
+    font-size:14px;font-weight:700;border:none;cursor:pointer;
+    text-decoration:none;transition:background .15s ease;
+  }
+  .btn:hover{background:rgba(70,198,201,0.22);}
+  .btn.solid{background:var(--accent);color:#06231F;}
+  .btn.solid:hover{background:#5CD8DA;}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="top">
+    <div class="brand">
+      <div class="brand-icon">🛡️</div>
+      <h1>BrawlVPN</h1>
+    </div>
+    <div class="top-actions">
+      <button class="icon-btn" title="Скопировать ссылку">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07l-1.41 1.41"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.41-1.41"/></svg>
+      </button>
+      <button class="icon-btn tg" title="Telegram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 4.5 2.7 11.9c-1.2.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.7c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.2-2.1 4.6 3.4c.8.5 1.4.2 1.6-.7l3-14.2c.3-1.2-.4-1.7-1.4-1.3Z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Subscription status card -->
+  <div class="card" id="subCard">
+    <div class="sub-head" onclick="document.getElementById('subCard').classList.toggle('collapsed')">
+      <div class="status-dot">✓</div>
+      <div class="sub-head-text">
+        <div class="name">free sub</div>
+        <div class="sub">Истекает через ∞</div>
+      </div>
+      <div class="chevron">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+      </div>
+    </div>
+    <div class="sub-body">
+      <div class="info-box">
+        <div class="info-label">👤 Имя пользователя</div>
+        <div class="info-value">free sub</div>
+      </div>
+      <div class="info-box green">
+        <div class="info-label">✓ Статус</div>
+        <div class="info-value">Активна</div>
+      </div>
+      <div class="info-box red">
+        <div class="info-label">📅 Истекает</div>
+        <div class="info-value">Никогда</div>
+      </div>
+      <div class="info-box amber">
+        <div class="info-label">⇅ Трафик</div>
+        <div class="info-value">0 GiB / ∞</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Installation card -->
+  <div class="card">
+    <div class="install-head">
+      <h2>Установка</h2>
+      <div class="platform-select">
+        📱
+        <select id="platformSelect" onchange="setPlatform(this.value)">
+          <option value="android">Android</option>
+          <option value="ios">iOS</option>
+          <option value="windows">Windows</option>
+          <option value="macos">macOS</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="tabs" id="tabs">
+      <div class="tab active" data-app="happ" onclick="selectTab(this)">⚡ Happ<span class="dot"></span></div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">⬇</div>
+      <div class="step-body">
+        <h3>Установка приложения</h3>
+        <p>Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает.</p>
+        <div class="step-actions">
+          <a class="btn" href="#" onclick="return false;">↗ Открыть в Google Play</a>
+          <a class="btn" href="#" onclick="return false;">↗ Скачать APK</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon">⤓</div>
+      <div class="step-body">
+        <h3>Добавление подписки</h3>
+        <p>Нажмите кнопку ниже, чтобы добавить подписку</p>
+        <div class="step-actions">
+          <a id="addSubBtn" class="btn solid" href="#">+ Добавить подписку</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-icon done">✓</div>
+      <div class="step-body">
+        <h3>Подключение и использование</h3>
+        <p>Откройте приложение и подключитесь к серверу</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Ссылка подписки
+  const SUBSCRIPTION_LINK = "happ://crypt5/fzvdbIxKU8DTKHdwcuuPFYsW11znRf2Gkp/ovGvTMYTLGm9f1Pl7iyj2h7o6hpzh6flE2E3ekUSJr4QegzNvKE2T3TLaQJLi6IC1tLI9R2ilOHqv/z1BGBJA1dPeAqu7i0g1ZZlOkadvbz6HXZuVmjOUz6OpYaS+9/I09uW2gJnQ1Be0vpVZisClIYhnWr8Dk5IVm+4m/wcTpdcMI+hLPTFP1CVWBEghKaift3cHr814SzZFOii1OUQpFpEWWQnNvWbY3l62PMIOI8FtkofHvOZy/gNmbhgmXVOAtRRf83WGX1m2cUZCghcvp3Mfq/MXORWU2V2gkYjHPIHnFc9BmdoxWR0XcBs/AzunlfxiPHdfc7SeaaqFfIjuHi98KKLcX6GRD7WDA6N5VzXZGM0CokPyv1A9mMP7hjG+YLsox1ExWUV2kRPr8uQV21t4MLLZClD/unjDofqGg+2f3RaEMoUmm78GDnRzeQMgvII2Ewsxlx4/f8dyAQUltGafPT41tIawc6j4TsLvIkvOaNgWd7LB3glJsHT7p2Bp0adbjVdVGJl9I2nj0ZgSNYviqeKVntN/A+PbS1tylL45fQF/GhZO4ZsE4x1YlYi2qnfbFWt93SSEYQuYA2i9kieVF+c3dFD9KVoJzwm5zkEi227iTZop7+L1UrQ56hZgg2Bu4qfMdOQDecNT/n2BPE0aWTFMirF4wLddx6YIfVHvl9H3YAfXFjjarb0hnZiJ/BrNTWo3rEhvPaAQvWrG/afu0ulvuEA5aue6WZay46IoRG3EB6Fz/pPrm1VKDzgY2R2Jdc1m4671Sqrr9ZI6fow=ff";
+
+  // Устанавливаем ссылку на кнопку
+  document.getElementById('addSubBtn').href = SUBSCRIPTION_LINK;
+
+  function selectTab(el){
+    document.querySelectorAll('#tabs .tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  function setPlatform(value){
+    console.log('Платформа выбрана:', value);
+  }
+</script>
+
+</body>
+</html>

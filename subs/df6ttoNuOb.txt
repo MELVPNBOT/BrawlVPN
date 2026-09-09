@@ -1,0 +1,4 @@
+Ваше Имя: Sanek37r
+annonce:base64:aGVsbG8gd29ybGQgdnBuIGNvbmZpZyB8IFVzZXI6IFNhbmVrMzdy
+vless://example-uuid@123.45.67.89:443?encryption=none&security=tls#Server-1
+vless://example-uuid@98.76.54.32:443?encryption=none&security=tls#Server-2

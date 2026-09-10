@@ -1,5 +1,5 @@
 # Имя владельца: User (@no)
-#subscription-userinfo: upload=0; download=0; total=73667279060992; expire=1791570792
+#subscription-userinfo: upload=0; download=0; total=73667279060992; expire=1789057392
 #profile-title: BrawlВПН
 #profile-update-interval: 1
 #announce:base64:0J3QtSDRgNCw0LHQvtGC0LDQtdGCPyDQndCw0LbQvNC40YLQtSDQvtCx0L3QvtCy0LvQtdC90LjQtfCflIEg0Lgg0YLQtdGB0YIg0L/QuNC90LPQsCDwn5O2CgogICAgICAgICDQkdC10LvRi9C1INGB0L/QuNGB0LrQuCDQsiDQv9C+0LTQv9C40YHQutC1CtCV0YHQu9C4INC90LUg0YDQsNCx0L7RgtCw0LXRgiDQvdC1INC+0LTQuNC9INGB0LXRgNCy0LXRgCDRgtCzQHNhbmVrMzdy
